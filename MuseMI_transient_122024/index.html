@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>global presentation</title>
+    <title>MuseMI talk</title>
 
-    <meta name="description" content="LSST_global">
-    <link rel="stylesheet" href="reveal/dist/reveal.css">
-    <link rel="stylesheet" href="reveal/dist/theme/darkenergy.css" id="theme">
+    <meta name="description" content="MuseMI talk">
+    <link rel="stylesheet" href="../assets/reveal/dist/reveal.css">
+    <link rel="stylesheet" href="../assets/reveal/dist/theme/darkenergy.css" id="theme">
 
     <!-- Highlight.js library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/monokai.min.css">
@@ -113,82 +113,161 @@
                 <span style="font-size: smaller;"><b>Raphael Bonnet-Guerrini</b><sup>1,2</sup>, Dominique Fouchez<sup>1</sup>, Bruno Sanchez<sup>1</sup>, Benjamin Racine<sup>1</sup></span>
                 
                 <br>
-                <span style="font-size: smaller;">25/11/2024</span>
+                <span style="font-size: smaller;">10/12/2024</span>
                 <br>
                 <br>
                 <br>
-                <span><sup>1</sup>Centre de Physique des Particules de Marseille, <sup>2</sup>Computer Science Department, University of Milan</span>
+                <span><sup>1</sup>Centre de Physique des Particules de Marseille; <sup>2</sup>Computer Science Department, University of Milan</span>
 
             </section>
             
-            <!-- Slide  2 : presentation -->
-            <section data-background-image="img_contents/dwarf_and_cluster_hsc.png">
-                <h3 class="slide-title">Scientific context of the project.</h3>
-                <b>H0 (the Hubble constant)</b> measures the current rate of expansion of the universe. 
-                <div class="fragment"style="text-align:left">
-                    <div class="container" style="align-items: start; text-align: left;">
-                        <div class="col" style="margin-top: 10px;">
-                            <img src="plot_contents/H0_tension.png" style="height: 400px; width: auto;"></img>
-                        </div>
-                        <br>
-                        <div class="col" style="margin-top: 10px;">
+            <!-- Slide  2 : presentation of the contexte -->
+            <section>
+                <section data-auto-animate data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+                    <h3 class="slide-title">Scientific context of the project.</h3>
+                    <b>H0 (the Hubble constant)</b> measures the current rate of expansion of the universe. 
+                    <div class="fragment"style="text-align:left">
+                        <div class="container" style="align-items: start; text-align: left;">
                             <br>
-                            <h4>Two independant methods to measure H0:</h4>
-                            <li>Cosmic Microwave Background (CMB) using shape from the residual of the first light of the universe.</li><br>
-                            <li>The Distance Ladder: Using different types of objects to measure distances, each type based on the previous one, until the Type Ia supernovae</li>
+                            <div class="col" style="margin-top: 10px;">
+                                <br>                                
+                                <h4>Two independant methods to measure H0:</h4>
+                                <br>
+                                <li>Cosmic Microwave Background (CMB) using shape from the residual of the first light of the universe.</li><br>
+                                <br>
+                                <br>
+                                
+                                <li>The Distance Ladder: A step-by-step method to measure astronomical distances:
+                                    <ul style="font-size: smaller;">
+                                        <li>Parallax: Measures nearby stars using Earth's orbit.</li>
+                                        <li>Standard Candles: Cepheid variables and Type Ia supernovae for greater distances.</li>
+                                    </ul>
+                                    Each method builds on the previous, revealing the scale of the universe.
+                                </li>
+                            </div>
+                            <div class="col" style="margin-top: 10px;">
+                                <img src="img_contents/Planck_CMB.png"></img>
+                                <img src="img_contents/distance_ladder.png"></img>
+                            </div>
                         </div>
-                </div>
+                    </div>
+                </section>
+                <section data-auto-animate data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+                    <h3 class="slide-title">Scientific context of the project.</h3>
+                    <b>H0 (the Hubble constant)</b> measures the current rate of expansion of the universe. 
+                    <div style="text-align:left">
+                        <div class="container" style="align-items: start; text-align: left;">
+                            <br>
+                            <div class="col" style="margin-top: 10px;">
+                                <br>                                
+                                <h4>Two independant methods to measure H0:</h4>
+                                <br>
+                                <li>Cosmic Microwave Background (CMB) using shape from the residual of the first light of the universe.</li><br>
+                                <br>
+                                <br>
+                                
+                                <li>The Distance Ladder: A step-by-step method to measure astronomical distances:
+                                    <ul style="font-size: smaller;">
+                                        <li>Parallax: Measures nearby stars using Earth's orbit.</li>
+                                        <li>Standard Candles: Cepheid variables and Type Ia supernovae for greater distances.</li>
+                                    </ul>
+                                    Each method builds on the previous, revealing the scale of the universe.
+                                </li>
+                            </div>
+                            <div class="col" style="margin-top: 10px;">
+                                <br>
+                                <br>
+                                <img src="plot_contents/H0_tension.png" style="height: 350px; width: auto;"></img>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>            
             
-            <!-- Slide  2 : Cosmology and big data -->
-            <section data-background-image="img_contents/noirlab2409b.png">
-                <h3 class="slide-title">Cosmology a data driven era.</h3>
-                <div style="text-align:left">The SHOES collaboration for there publication in 2020 used ~100 Type Ia supernovae for their measurements.</div>
-                <div class="fragment"style="text-align:left">
-                    <div class="container" style="align-items: start; text-align: left;">
-                        <div class="col" style="margin-top: 10px;">
-                            <h4>Legacy Survey of Space and Time data specifities:</h4>
-                            <li>Located in Chile, starting in 2025.</li>
-                            <li>Nightly data size: 20 TB/night</li>
-                            <li>Final database size (DR11) : 15 PB</li>
-                            <li>Real-time alert latency : 60 seconds</li>
-                            <li>Up 100k spectroscopically confirmed Type Ia supernovae, 1M in total</li>
-                        </div>
+            <!-- Slide 3 : LSST spec -->
+            <section>
+                <section data-auto-animate data-background-image="img_contents/noirlab2409b.png">
+                    <h3 class="slide-title">Cosmology: a data driven era.</h3>
+                    <div style="text-align:left">The SHOES collaboration for there publication in 2020 used ~100 Type Ia supernovae for their measurements.</div>
+                    <div class="fragment"style="text-align:left">
+                        <div class="container" style="align-items: start; text-align: left;">
+                            <div class="col" style="margin-top: 10px;">
+                                <h4>Legacy Survey of Space and Time (LSST) data specifities: Up 100k spectroscopically confirmed Type Ia supernovae, 1M in total</h4>
+                                <li>Located in Chile </li>
+                                <li>Initial proposal started in the early 2000s</li>    
+                                <li>Data acquisition (should) start in 2025.</li>
+                                <li>Final database size : 15 PB</li>
+                            </div>
                         <div class="col" style="margin-top: 10px;"></div>
-                </div>
+                    </div>
+                </section>
+            </section>
+            <section data-auto-animate data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+                <section >
+                    <h3 class="slide-title">Difference Image analysis: </h3>
+                    <div class=" container" style="align-items: start; text-align: center;">
+                        <div class="fragment col">
+                            <br>
+                            <br>                                
+                            <img src="img_contents/DIA.png" style="width: 300px; height: auto;">
+                        </div>
+                        <div class="col" style="text-align: left;">
+                            <span class="fragment">
+                                For each difference
+                                <li>Perform photometry</li>
+                                <li>Crossmatch with known catalogs</li>
+                                <li>Find nearest Solar System objects</li>
+                                <li>Compute various features</li>
+                                <li>Find past LSST detections at this location</li>
+                                <li>Package into an alert</li>
+                            </span>
+                            <br>
+                            <span class="fragment">
+                                <li>1 image every < 60 seconds</li>
+                                <li>10 0000 detection per image</li>
+                                <li>~1,000 images per night</li>
+                                <li>365 nights per year</li>
+                                <li>10 year survey</li>
+                            </span>
+                        </div>
+
+                    </div>
+                </section>
+                <section >
+                    <h3 class="slide-title">Difference Image analysis: </h3>
+                    <div class=" container" style="align-items: start; text-align: center;">
+                        <div class="col">
+                            <br>
+                            <br>                                
+                            <img src="img_contents/DIA.png" style="width: 300px; height: auto;">
+                        </div>
+                        <div class="fragment col">
+                            <img src="img_contents/key_intuition3.png" style="width: 700px; height: auto;">
+                        </div>
+                    </div>
+                </section>
+                <section data-auto-animate data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+
+                    <h3 class="slide-title">Weakly supervised learning problem</h3>
+                    <div style="text-align: left;">
+                        No ground truth. Interested in the <b>False Positives</b>
+                    </div>
+                    <div class="container" style="align-items: start; text-align: center;">
+                        <div class="col">
+                            <br><br><br><br><br><br><br><br>
+                            <img src="img_contents/key_intuition3.png" style="width: 700px; height: auto;">
+
+                        </div>
+                        <div class="col" style="align-items: start; text-align: right;"">
+                            <img class ="fragment" src="img_contents/key_intuition4.png" style="width: 700px; height: auto;">
+                        </div>
+
+                    
+                    </div>
+                </section>
             </section>
 
-            <!-- Slide  2 : project presentation -->
-            <section data-background-gradient="linear-gradient(to bottom, black, darkgrey)">
-                <h3 class="slide-title">Context of the presentation.</h3>
-                <div style="text-align:left">
-                    <h4>Context : </h4>
-                    <li>Our team is interested in cosmology with Supernovae.</li>
-                    <li>Working on difference imaging data and pipeline. </li>
-                    <li>DIA techniques produce a majority of <b>bogus detections</b> — noise or artifacts — that can
-                        result from imperfect image subtraction, cosmic rays, bad pixels, or atmospheric effects.</li>
-                </div>
-                <br>
-                <div class="fragment">
-                    <img src="img_contents/examples_bogus.png" style=" height: 100px; width: auto;"></img>
-                </div>
-                <br>
-
-                <div class="fragment" style="text-align:left">
-                    <h4>Presentation plan : </h4>
-                    <ol>
-                        <li>Present the <b>production of fake catalogs</b> and their <b>injection into real data</b>
-                            using the Gen3 pipeline.</li>
-                        <li>Investigate the potential of an <b>ML-based Transient/Bogus classifier</b> using fake
-                            injections.</li>
-                    </ol>
-                </div>
-
-            </section>
-
-
-
-            <!-- Slide  3 : intuition of the project-->
+            <!-- Slide  5 : intuition of the project-->
             <section data-background-gradient="linear-gradient(to bottom, black, darkgrey)">
                 <section data-auto-animate>
                     <h3 class="slide-title">Intuitions behind this project</h3>
@@ -836,12 +915,11 @@ ingest_injection_catalog \
             </section>
             <section data-background-image="img_contents/dwarf_and_cluster_hsc.png" style="text-align:left">
                 <section>
-                    <h3 class="slide-title">Light Curve Confirmation : </h3>
+                    <h3 class="slide-title">The path to quantitative results : Light Curve Confirmation  </h3>
                     <br>
-                    Adding a matching step to the pipeline on step 4, we build a DIA object table.
-
+                    Light curves are the evolution of the magnitude of a source during time.
                     <div style="text-align:center">
-                    <img src="img_contents/matching_graph.png" style="width: 600px; height: auto;"></img>
+                    <img src="img_contents/SNIA_LC.jpeg" style="width: 600px; height: auto;"></img>
                     </div>
                 </section>
                 <section>
@@ -851,25 +929,28 @@ ingest_injection_catalog \
                     <iframe src="plot_contents/light_curve.html" class="bokeh-iframe"></iframe>
 
                 </section>
-                <section>
-                    <h3 class="slide-title">Light Curve Confirmation </h3>
-                    We also developed a tool to inspect this LC on the UMAP.
-                    <iframe src="plot_contents/umap_label_injected.html" class="bokeh-iframe"></iframe>
-                    <span style="font-size: x-small; text-align:right">
-                        This work has received funding from the European Union’s Horizon 2020 research and innovation programme under a Marie Skłodowska-Curie grant agreement.
-                    </span>
+                <section >
+                    <h3 class= "slide-title">On the Commisionning camera !!!!
+                        <img src="img_contents/comcam_umap.png" style="width: 700px; height: auto;">
+                    </h3>
                 </section>
-
+            </section>
+            <section data-background-image="img_contents/dwarf_and_cluster_hsc.png" style="text-align:center">
+                <h1>Thank you for your attention! </h1>
+                <h1>Questions ? </h1>
+                <span style="font-size: x-small; text-align:right">
+                    This work has received funding from the European Union’s Horizon 2020 research and innovation programme under a Marie Skłodowska-Curie grant agreement.
+                </span>
             </section>
         </div>
     </div>
 </body>
 <!-- Include Reveal.js -->
-<script src="./reveal/dist/reveal.js"></script>
+<script src="../assets/reveal/dist/reveal.js"></script>
 
 <!-- Include Plugins (optional) -->
-<script src="./reveal/plugin/zoom/zoom.js"></script>
-<script src="./reveal/plugin/highlight/highlight.js"></script>
+<script src="../assets/reveal/plugin/zoom/zoom.js"></script>
+<script src="../assets/reveal/plugin/highlight/highlight.js"></script>
 
 <!-- Include MathJax -->
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

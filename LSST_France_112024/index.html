@@ -107,7 +107,7 @@
         <div class="slides">
 
             <!-- Slide 1 -->
-            <section data-background-image="img_contents/noirlab2409b.png">
+            <section data-background-image="../assets/global_assets/img_contents/noirlab2409b.png">
                 <h2>Human-Labelling-Free Transient and Bogus Classifier using Gen3 LSST Pipelines</h2>
                 <h3>From data extraction to model evaluation</h3>
                 <span style="font-size: smaller;"><b>Raphael Bonnet-Guerrini</b><sup>1,2</sup>, Dominique Fouchez<sup>1</sup>, Bruno Sanchez<sup>1</sup>, Benjamin Racine<sup>1</sup></span>
@@ -133,7 +133,7 @@
                 </div>
                 <br>
                 <div class="fragment">
-                    <img data-src="img_contents/examples_bogus.png" style=" height: 100px; width: auto;"></img>
+                    <img data-src="../assets/global_assets/img_contents/examples_bogus.png" style=" height: 100px; width: auto;"></img>
                 </div>
                 <br>
 
@@ -167,9 +167,9 @@
                         between bogus and transient.
                     </div>
                     <div class="fragment">
-                        <img data-src="img_contents/True_class_Real_pred_class_bogus.png" class="plain"></img>
-                        <img data-src="img_contents/True_class_Real_pred_class_transient.png" class="plain"></img>
-                        <img data-src="img_contents/True_class_injected_pred_class_transient.png" class="plain"></img>
+                        <img data-src="../assets/global_assets/img_contents/True_class_Real_pred_class_bogus.png" class="plain"></img>
+                        <img data-src="../assets/global_assets/img_contents/True_class_Real_pred_class_transient.png" class="plain"></img>
+                        <img data-src="../assets/global_assets/img_contents/True_class_injected_pred_class_transient.png" class="plain"></img>
                     </div>
                     <br>
                     <div class="fragment">
@@ -187,10 +187,10 @@
                     </h3>
                     <span>
                         <img style="opacity: 0.2; margin: 100px"
-                            data-src="img_contents/True_class_Real_pred_class_bogus.png" class="plain"></img>
+                            data-src="../assets/global_assets/img_contents/True_class_Real_pred_class_bogus.png" class="plain"></img>
                         <img style="opacity: 0.2; margin: 100px"
-                            data-src="img_contents/True_class_injected_pred_class_transient.png" class="plain"></img>
-                        <img style="margin: 100px" data-src="img_contents/True_class_Real_pred_class_transient.png"
+                            data-src="../assets/global_assets/img_contents/True_class_injected_pred_class_transient.png" class="plain"></img>
+                        <img style="margin: 100px" data-src="../assets/global_assets/img_contents/True_class_Real_pred_class_transient.png"
                             class="plain"></img>
                     </span>
                     <div style="margin: -80px">
@@ -220,7 +220,7 @@
                             dataset.</li>
                     </div>
                     <span class="fragment">
-                        <img src="img_contents/injected_calexp_gif.gif" style="width: 400px; height: auto;">
+                        <img src="../assets/global_assets/img_contents/injected_calexp_gif.gif" style="width: 400px; height: auto;">
                     </span>
                 </section>
 
@@ -324,13 +324,13 @@ ingest_injection_catalog \
                     </span>
                     Adding a inject_visit task to the pipeline on step 3, we build a DIA object table.
                     <div style="text-align:center">
-                        <img src="img_contents/injected_graph.png" style="width: 400px; height: auto;"></img>
+                        <img src="../assets/global_assets/img_contents/injected_graph.png" style="width: 400px; height: auto;"></img>
                     </div>
                 </section>
             </section>
             <!-- Slide 6 : Data presentation -->
             <section>
-                <section data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+                <section data-background-image="../assets/global_assets/img_contents/dwarf_and_cluster_hsc.png">
                     <h3 class="slide-title">Data Presentation</h3>
                     The HSC RC2 subset is composed of 6 detectors, with 8 visits per filter. UDEEP COSMOS foreseen.
                     <div class="container" style="align-items: start; text-align: left;">
@@ -347,7 +347,7 @@ ingest_injection_catalog \
                         </div>
                         <div class="col" style="margin-top: 10px;">
                             <br>
-                            <img src="img_contents/cutouts_examples.png" style="width: 500px; height: auto;">
+                            <img src="../assets/global_assets/img_contents/cutouts_examples.png" style="width: 500px; height: auto;">
                         </div>
                     </div>
                 </section>
@@ -355,7 +355,7 @@ ingest_injection_catalog \
 
             <!-- Slide 7 : Network presentation -->
             <section>
-                <section data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+                <section data-background-image="../assets/global_assets/img_contents/dwarf_and_cluster_hsc.png">
                     <h3 class="slide-title">Network Architecture</h3>
                     <div style='text-align: left'>
                         A simple CNN architecture:
@@ -363,12 +363,12 @@ ingest_injection_catalog \
                         <li>2 fully connected layers (FCC) for high-level abstractions and classification output.</li>
                         <li>Dropout layers to avoid overfitting.</li>
                     </div>
-                    <img src="img_contents/NN_visu.png" style="width: 700px; height: auto;">
+                    <img src="../assets/global_assets/img_contents/NN_visu.png" style="width: 700px; height: auto;">
                 </section>
             </section>
 
             <!-- Slide 8 : Confusion matrix -->
-            <section data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+            <section data-background-image="../assets/global_assets/img_contents/dwarf_and_cluster_hsc.png">
                 <!-- Slide 8.1 confusion matrix explanation-->
                 <section>
                     <h3 class="slide-title">Confusion Matrix</h3>
@@ -385,7 +385,7 @@ ingest_injection_catalog \
                             </ul>
                         </div>
                         <div class="col">
-                            <img src="img_contents/confusion_explanation.png" style="width: 700px; height: auto;">
+                            <img src="../assets/global_assets/img_contents/confusion_explanation.png" style="width: 700px; height: auto;">
                         </div>
 
                     </div>
@@ -451,7 +451,7 @@ ingest_injection_catalog \
             </section>
 
             <!-- Slide 9: Injected, Predicted -->
-            <section data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+            <section data-background-image="../assets/global_assets/img_contents/dwarf_and_cluster_hsc.png">
                 <!-- Slide 9.1 -->
                 <section style="text-align:left">
                     <h3 class="slide-title">Injected and Real Data Output Probability Comparison</h3>
@@ -528,7 +528,7 @@ ingest_injection_catalog \
             </section>
 
             <!-- Slide 10 UMAP -->
-            <section data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+            <section data-background-image="../assets/global_assets/img_contents/dwarf_and_cluster_hsc.png">
                 <!-- Slide 10.1 -->
                 <section style="text-align:left">
                     <section>
@@ -549,7 +549,7 @@ ingest_injection_catalog \
                             </ul>
                         </div>
                         <div style="text-align:center">
-                            <img src="img_contents/umap_explanation.png" style="width: 600px; height: auto;"></img>
+                            <img src="../assets/global_assets/img_contents/umap_explanation.png" style="width: 600px; height: auto;"></img>
                         </div>
                         <div class="fragment">
                             <h4>UMAP in Our Case:</h4>
@@ -579,7 +579,7 @@ ingest_injection_catalog \
             </section>
 
             <!-- Slide 11 UMAP SNR -->
-            <section data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+            <section data-background-image="../assets/global_assets/img_contents/dwarf_and_cluster_hsc.png">
                 <!-- Slide 11.1 -->
                 <section>
                     <h3 class="slide-title">UMAP with Data Class Predictions and SNR</h3>
@@ -607,12 +607,12 @@ ingest_injection_catalog \
                 </section>
 
                 <!-- Slide 11.2 -->
-                <section data-background-image="img_contents/dwarf_and_cluster_hsc.png" style="text-align:left">
+                <section data-background-image="../assets/global_assets/img_contents/dwarf_and_cluster_hsc.png" style="text-align:left">
                     <h3 class="slide-title">Co-Teaching: A Self-Event-Selection Strategy for Weakly Supervised Learning</h3>
                     <p>Two models are trained simultaneously with different views on the same dataset.</p>
                     <div class="container" style="align-items: start; text-align: left">
                         <div class="col">
-                            <img data-src="img_contents/co_teaching.png" class="plain"></img>
+                            <img data-src="../assets/global_assets/img_contents/co_teaching.png" class="plain"></img>
                             <div style="text-align: center;">
                                 <br>
                                 <a href="https://arxiv.org/abs/1804.06872">
@@ -648,12 +648,12 @@ ingest_injection_catalog \
                             <li>Better fits the needs of our asymmetrically weakly supervised dataset.</li>
                         </ul>
                     </div>
-                    <img data-src="img_contents/asym_coteaching.png" style="width: 700px; height: auto;" class="plain"></img>
+                    <img data-src="../assets/global_assets/img_contents/asym_coteaching.png" style="width: 700px; height: auto;" class="plain"></img>
                 </section>
             </section>
 
             <!-- Slide 12: Confusion Matrix -->
-            <section data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+            <section data-background-image="../assets/global_assets/img_contents/dwarf_and_cluster_hsc.png">
                 <!-- Slide 12.1: Confusion Matrix of the Simple Network -->
                 <section>
                     <h3 class="slide-title">Confusion Matrix</h3>
@@ -710,7 +710,7 @@ ingest_injection_catalog \
 
 
             <!-- Slide 13 injected, predicted -->
-            <section data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+            <section data-background-image="../assets/global_assets/img_contents/dwarf_and_cluster_hsc.png">
                 <!-- Slide 13.1 -->
 
                 <section>
@@ -776,7 +776,7 @@ ingest_injection_catalog \
 
 
             <!-- Slide 14 UMAP -->
-            <section data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+            <section data-background-image="../assets/global_assets/img_contents/dwarf_and_cluster_hsc.png">
                 <!-- Slide 14.1 -->
                 <section>
                     <h3 class="slide-title">UMAP with data class predictions.</h3>
@@ -793,14 +793,14 @@ ingest_injection_catalog \
                 </section>
 
             </section>
-            <section data-background-image="img_contents/dwarf_and_cluster_hsc.png" style="text-align:left">
+            <section data-background-image="../assets/global_assets/img_contents/dwarf_and_cluster_hsc.png" style="text-align:left">
                 <section>
                     <h3 class="slide-title">Light Curve Confirmation : </h3>
                     <br>
                     Adding a matching step to the pipeline on step 4, we build a DIA object table.
 
                     <div style="text-align:center">
-                    <img src="img_contents/matching_graph.png" style="width: 600px; height: auto;"></img>
+                    <img src="../assets/global_assets/img_contents/matching_graph.png" style="width: 600px; height: auto;"></img>
                     </div>
                 </section>
                 <section>
@@ -819,7 +819,7 @@ ingest_injection_catalog \
                     </div>
                 </section>
             </section>
-            <section  data-background-image="img_contents/dwarf_and_cluster_hsc.png">
+            <section  data-background-image="../assets/global_assets/img_contents/dwarf_and_cluster_hsc.png">
                 <h1 style="text-align:center">Thank you ! </h1>
                 <div>Contact : raphael.bonnet-guerrini@unimi.it</div>
                 <br>

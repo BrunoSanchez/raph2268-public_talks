@@ -111,7 +111,7 @@
                 <h2>Human-Labelling-Free Transient and Bogus Classifier using Gen3 LSST Pipelines</h2>
                 <h3>From data extraction to model evaluation</h3>
                 <span style="font-size: smaller;"><b>Raphael Bonnet-Guerrini</b><sup>1,2</sup>, Dominique Fouchez<sup>1</sup>, Bruno Sanchez<sup>1</sup>, Benjamin Racine<sup>1</sup></span>
-                
+
                 <br>
                 <span style="font-size: smaller;">28/11/2024</span>
                 <br>
@@ -243,13 +243,13 @@
                     <div style="display: flex; justify-content: center; align-items: center;">
                         <span class="fragment" data-fragment-index="1">
                             <span>
-                                <img src="plot_contents/extendedness.png" style="width: 400px; height: auto;">
+                                <img src="../assets/global_assets/plot_contents/extendedness.png" style="width: 400px; height: auto;">
                                 <figcaption><span style="font-size: 15px; margin-top: -30px">Extendedness measurement vs
                                         extendedness criteria.</span></figcaption>
                             </span>
                         </span>
                         <span class="fragment" data-fragment-index="2" style="margin: 15px;">
-                            <img src="plot_contents/galaxy_identification.png" style="width: 350px; height: auto;">
+                            <img src="../assets/global_assets/plot_contents/galaxy_identification.png" style="width: 350px; height: auto;">
                             <figcaption><span style="font-size: 15px; margin-top: -50px">Galaxies circled in red.</span>
                             </figcaption>
                         </span>
@@ -288,12 +288,12 @@
                             </div>
                             <div class="col" style="text-align: center;">
                                 <!-- First image (appears with first bullet point) -->
-                                <img src="plot_contents/injections_positions_mag.png" class="fragment"
+                                <img src="../assets/global_assets/plot_contents/injections_positions_mag.png" class="fragment"
                                     data-fragment-index="1" style="width: 320px; height: auto;">
                             </div>
                             <div class="col" style="text-align: center;">
                                 <!-- Second image (appears with second bullet point) -->
-                                <img src="plot_contents/injections_zoomed_ccd.png" class="fragment"
+                                <img src="../assets/global_assets/plot_contents/injections_zoomed_ccd.png" class="fragment"
                                     data-fragment-index="2" style="width: 300px; height: auto;">
                             </div>
                         </div>
@@ -312,7 +312,7 @@
                             <li>The injection catalogs are created for each specific visit. They are non correlated - No Light Curve. </li>
                             <br>
                             <li>Ingestion is done band by band.</li>
-                            
+
                         </span>
 
                         <pre><code class="bash" style="font-size: 13px;">
@@ -387,7 +387,7 @@ ingest_injection_catalog \
                         <div class="col">
                             <img src="img_contents/confusion_explanation.png" style="width: 700px; height: auto;">
                         </div>
-                    
+
                     </div>
                 </section>
 
@@ -414,7 +414,7 @@ ingest_injection_catalog \
                             </ul>
                         </div>
                         <div class="col">
-                            <img src="plot_contents/conf_matrix_all_gen3.png">
+                            <img src="../assets/global_assets/plot_contents/conf_matrix_all_gen3.png">
                         </div>
                     </div>
                 </section>
@@ -444,7 +444,7 @@ ingest_injection_catalog \
                             </ul>
                         </div>
                         <div class="col">
-                            <iframe src="plot_contents/conf_matrix_snr5.html" class="bokeh-iframe"></iframe>
+                            <iframe src="../assets/global_assets/plot_contents/conf_matrix_snr5.html" class="bokeh-iframe"></iframe>
                         </div>
                     </div>
                 </section>
@@ -469,13 +469,13 @@ ingest_injection_catalog \
                 <!-- Slide 9.2 -->
                 <section>
                     <h3 class="slide-title">Injected and Real Data Output Probability Comparison</h3>
-                    <div style="align-items: start; text-align: left"> 
+                    <div style="align-items: start; text-align: left">
                         Trained on all different available visits:
                     </div>
                     <br>
                     <div class="container" style="align-items: start; text-align: left">
                         <div class="col">
-                            <img src="plot_contents/injected_pred_all_gen3.png" >
+                            <img src="../assets/global_assets/plot_contents/injected_pred_all_gen3.png" >
                         </div>
 
                         <div class="col" style="margin-top: 5px;">
@@ -499,13 +499,13 @@ ingest_injection_catalog \
                 <!-- Slide 9.3 -->
                 <section>
                     <h3 class="slide-title">Injected and Real Data Output Probability Comparison</h3>
-                    <div style="align-items: start; text-align: left"> 
+                    <div style="align-items: start; text-align: left">
                         Trained on all different available visits, evaluating only high SNR:
                     </div>
                     <br>
                     <div class="container" style="align-items: start; text-align: left">
                         <div class="col">
-                            <iframe src="plot_contents/injected_pred_snr5.html" class="bokeh-iframe"></iframe>
+                            <iframe src="../assets/global_assets/plot_contents/injected_pred_snr5.html" class="bokeh-iframe"></iframe>
                         </div>
 
                         <div class="col" style="margin-top: 10px;">
@@ -565,7 +565,7 @@ ingest_injection_catalog \
                 <section>
                     <h3 class="slide-title">UMAP with Data Class Predictions</h3>
                     <div style="align-items: start; text-align: left">Trained on all available visits:</div>
-                    <iframe src="plot_contents/umap_label_all_gen3.html" class="bokeh-iframe"></iframe>
+                    <iframe src="../assets/global_assets/plot_contents/umap_label_all_gen3.html" class="bokeh-iframe"></iframe>
                 </section>
 
                 <!-- Slide 10.3 -->
@@ -574,7 +574,7 @@ ingest_injection_catalog \
                     <div style="align-items: start; text-align: left">
                         Trained on all available visits, evaluated only for high SNR:
                     </div>
-                    <iframe src="plot_contents/umap_label_snr5.html" class="bokeh-iframe"></iframe>
+                    <iframe src="../assets/global_assets/plot_contents/umap_label_snr5.html" class="bokeh-iframe"></iframe>
                 </section>
             </section>
 
@@ -584,7 +584,7 @@ ingest_injection_catalog \
                 <section>
                     <h3 class="slide-title">UMAP with Data Class Predictions and SNR</h3>
                     <div style="align-items: start; text-align: left">Trained on all available visits:</div>
-                    <iframe src="plot_contents/umap_snr_all_gen3.html" class="bokeh-iframe"></iframe>
+                    <iframe src="../assets/global_assets/plot_contents/umap_snr_all_gen3.html" class="bokeh-iframe"></iframe>
                 </section>
 
                 <!-- Slide 11.2 -->
@@ -593,7 +593,7 @@ ingest_injection_catalog \
                     <div style="align-items: start; text-align: left">
                         Trained on all available visits, evaluated only for high SNR:
                     </div>
-                    <iframe src="plot_contents/umap_snr_snr5.html" class="bokeh-iframe"></iframe>
+                    <iframe src="../assets/global_assets/plot_contents/umap_snr_snr5.html" class="bokeh-iframe"></iframe>
                 </section>
             </section>
 
@@ -676,7 +676,7 @@ ingest_injection_catalog \
                             </ul>
                         </div>
                         <div class="col">
-                            <img src="plot_contents/conf_matrix_all_gen3.png" >
+                            <img src="../assets/global_assets/plot_contents/conf_matrix_all_gen3.png" >
                         </div>
                     </div>
                 </section>
@@ -702,7 +702,7 @@ ingest_injection_catalog \
                             </ul>
                         </div>
                         <div class="col">
-                            <img src="plot_contents/conf_matrix_co_teaching.png" >
+                            <img src="../assets/global_assets/plot_contents/conf_matrix_co_teaching.png" >
                         </div>
                     </div>
                 </section>
@@ -719,7 +719,7 @@ ingest_injection_catalog \
                     <br>
                     <div class="container" style="align-items: start; text-align: left"">
                             <div class=" col">
-                        <img src="plot_contents/injected_pred_all_gen3.png" >
+                        <img src="../assets/global_assets/plot_contents/injected_pred_all_gen3.png" >
                     </div>
 
                     <div class="col" style="margin-top: 10px;">
@@ -751,7 +751,7 @@ ingest_injection_catalog \
                     <br>
                     <div class="container" style="align-items: start; text-align: left"">
                                 <div class=" col">
-                        <img src="plot_contents/injected_pred_co_teaching.png">
+                        <img src="../assets/global_assets/plot_contents/injected_pred_co_teaching.png">
                     </div>
 
                     <div class="col" style="margin-top: 10px;">
@@ -781,7 +781,7 @@ ingest_injection_catalog \
                 <section>
                     <h3 class="slide-title">UMAP with data class predictions.</h3>
                     <div style="align-items: start; text-align: left"> Trained on all different available visits : </div>
-                    <iframe src="plot_contents/umap_label_all_gen3.html" class="bokeh-iframe"></iframe>
+                    <iframe src="../assets/global_assets/plot_contents/umap_label_all_gen3.html" class="bokeh-iframe"></iframe>
                 </section>
 
                 <!-- Slide 14.2 -->
@@ -789,7 +789,7 @@ ingest_injection_catalog \
                     <h3 class="slide-title"> UMAP with data class predictions. </h3>
                     <div style="align-items: start; text-align: left"> Trained on all different available visits, using co
                         teaching method. </div>
-                    <iframe src="plot_contents/umap_label_co_teaching.html" class="bokeh-iframe"></iframe>
+                    <iframe src="../assets/global_assets/plot_contents/umap_label_co_teaching.html" class="bokeh-iframe"></iframe>
                 </section>
 
             </section>
@@ -805,15 +805,15 @@ ingest_injection_catalog \
                 </section>
                 <section>
                     <h3 class="slide-title">Light Curve Confirmation </h3>
-                    
+
                     Using Dia Object Table we are able to build the LC :
-                    <iframe src="plot_contents/light_curve.html" class="bokeh-iframe"></iframe>
+                    <iframe src="../assets/global_assets/plot_contents/light_curve.html" class="bokeh-iframe"></iframe>
 
                 </section>
                 <section>
                     <h3 class="slide-title">Light Curve Confirmation </h3>
                     We also developed a tool to inspect this LC on the UMAP.
-                    <iframe src="plot_contents/umap_label_injected.html" class="bokeh-iframe"></iframe>
+                    <iframe src="../assets/global_assets/plot_contents/umap_label_injected.html" class="bokeh-iframe"></iframe>
                     <div style="font-size: x-small; text-align:right">
                         This work has received funding from the European Union’s Horizon 2020 research and innovation programme under a Marie Skłodowska-Curie grant agreement.
                     </div>
